@@ -62,7 +62,7 @@ int BackBufferHeight = 0;
 
 #define TEXTURE_PATH_BRICK L"brick.png"
 #define BRICK_START_X 8.0f
-#define BRICK_START_Y 200.0f
+#define BRICK_START_Y 300.0f
 
 #define BRICK_START_VX 0.2f
 
@@ -383,7 +383,7 @@ void Render()
 		// The translation matrix to be created
 		D3DXMATRIX matTranslation;
 		// Create the translation matrix
-		D3DXMatrixTranslation(&matTranslation, brick_x, (BackBufferHeight - brick_y), 0.1f);
+		D3DXMatrixTranslation(&matTranslation, brick_x, (BackBufferHeight - brick_y),0.1f);
 
 		// Scale the sprite to its correct width and height
 		D3DXMATRIX matScaling;
